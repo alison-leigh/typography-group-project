@@ -8,11 +8,51 @@
     <title>Typography</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="script/nav.js"></script>
 </head>
 <body>
 <!-- navigation -->
-<div id="navigation"></div>
+
+<section id="navbar" name="navigation bar">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Typography</a>
+            <div id="greeter">Hello {{user}}</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            History of Type
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="history/timeline.html">Timeline</a></li>
+                            <li><a class="dropdown-item" href="history/past.html">Past</a></li>
+                            <li><a class="dropdown-item" href="history/present.html">Present</a></li>
+                            <li><a class="dropdown-item" href="history/future.html">Future</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Playground
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="playground/quiz.html">What Font Are You?</a></li>
+                            <li><a class="dropdown-item" href="playground/fonts.html">Play With Fonts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
 
 <!--main info section. collapses into a column after medium breakpoint.-->
 <section class="main container-fluid mt-4">
@@ -20,7 +60,6 @@
         <section id="welcomeInfo" name="welcome information" class="col-md">
             <h1>Welcome Info</h1>
             <p>This is a good place to put our website outline for the assignment.</p>
-            <p>Test Test Test</p>
             <ul>
                 <li>info here</li>
                 <li>info here</li>
@@ -34,47 +73,16 @@
         <section id="signup" name="sign up" class="col-md">
             <h1>Sign Up</h1>
             <p>Ignore the fields, this is a placeholder.</p>
-            <form id="signupForm">
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your name here">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
         </section>
     </div>
 </section>
 </body>
-<footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('signupForm');
-            const greeter = document.getElementById('greeter');
-
-            // when the form is submitted, store the name in localStorage
-            form.onsubmit = function(event) {
-                event.preventDefault();
-                const name = document.getElementById('name').value;
-                localStorage.setItem('userName', name);
-                displayWelcomeMessage();
-            };
-
-            // Function to display the welcome message
-            function displayWelcomeMessage() {
-                const storedName = localStorage.getItem('userName');
-                if (storedName) {
-                    greeter.innerText = `Hello ${storedName}!`;
-                }
-            }
-
-            // Display the message if the name is already stored
-            displayWelcomeMessage();
-        });
-
-    </script>
-</footer>
 </html>
