@@ -22,10 +22,17 @@ nav {
 .navbar-brand:hover {
     color: floralwhite;
 }
+/* Important! Make sure to put this class on the current page's nav-link in Nav Bar*/
 .currentPage{
     color: floralwhite !important;
 }
 /* Start of Content Styling */
+h2{
+    color: black;
+    font-family: 'PT Serif', Serif;
+    font-size: 4vw;
+    text-align: center;
+}
 .sectionStyle {
     background-color: floralwhite;
     margin: 0px;
@@ -50,6 +57,7 @@ nav {
     text-align: left;
     padding: 4px;
 }
+/* About Us Page Styling*/
 .teamContainer{
     border: 2px solid floralwhite;
     border-radius: 16px;
@@ -58,18 +66,13 @@ nav {
     box-shadow: 5px 10px 8px #ccc5b9;
     transition: 0.3;
 }
-h2{
-    color: black;
-    font-family: 'PT Serif', Serif;
-    font-size: 4vw;
-    text-align: center;
-}
 .vl{
     border-left: 2px solid #EB5E28;
     height: auto;
     margin: 50px 0px 50px 0px;
     
 }
+/* Causes the middle vertical line (vl) to disappear for small screens*/
 @media (max-width: 575.98px) {
     #displayNone{
         display:none;
