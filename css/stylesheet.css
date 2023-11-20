@@ -1,0 +1,77 @@
+body, html{
+    background-color: floralwhite;
+    /* Body Text Font*/
+    font-family: 'Montserrat', 'Open Sans', 'Sans Serif';
+}
+/* Start of Nav Bar Styling */
+nav {
+    background-color: #252422;
+}
+#greeter{
+    color:#EB5E28
+}
+.nav-link {
+    color: #eb5e28;
+}
+.navbar-brand {
+    color: #eb5e28;
+}
+.nav-link:hover {
+    color: floralwhite;
+}
+.navbar-brand:hover {
+    color: floralwhite;
+}
+.currentPage{
+    color: floralwhite !important;
+}
+/* Start of Content Styling */
+.sectionStyle {
+    background-color: floralwhite;
+    margin: 0px;
+    padding: 32px 8px 32px 8px;
+    color:#252422;
+}
+.sectionStyle h3{
+    color: #EB5E28;
+    text-decoration: underline;
+    font-family: 'PT Serif', Serif;
+    font-size: 2vw;
+    padding: 4px;
+}
+.sectionStyle h5{
+    font-size: 1.5vw;
+    padding: 4px;
+}
+.sectionStyle p{
+    width: 200px;
+    height:auto;
+    font-size: 1.25vw;
+    text-align: left;
+    padding: 4px;
+}
+.teamContainer{
+    border: 2px solid floralwhite;
+    border-radius: 16px;
+}
+.teamContainer:hover{
+    box-shadow: 5px 10px 8px #ccc5b9;
+    transition: 0.3;
+}
+h2{
+    color: black;
+    font-family: 'PT Serif', Serif;
+    font-size: 4vw;
+    text-align: center;
+}
+.vl{
+    border-left: 2px solid #EB5E28;
+    height: auto;
+    margin: 50px 0px 50px 0px;
+    
+}
+@media (max-width: 575.98px) {
+    #displayNone{
+        display:none;
+    }
+ }
