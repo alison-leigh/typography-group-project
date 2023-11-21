@@ -62,9 +62,14 @@ h2{
     border: 2px solid floralwhite;
     border-radius: 16px;
 }
+.teamContainer img{
+    margin-left:auto;
+    margin-right: auto;
+}
 .teamContainer:hover{
     box-shadow: 5px 10px 8px #ccc5b9;
-    transition: 0.3;
+    transition: 0.3ms;
+    border: 1px solid #ccc5b9;
 }
 .vl{
     border-left: 2px solid #EB5E28;
@@ -73,7 +78,7 @@ h2{
     
 }
 /* Causes the middle vertical line (vl) to disappear for small screens*/
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     #displayNone{
         display:none;
     }
