@@ -229,3 +229,69 @@ h2{
     }
   }
   /* End of Timeline Page Styling */
+
+  /* Start of Past Page Styling*/
+
+  /* Side Nav Styling */
+  /* The sidebar menu */
+.sidenav {
+    height: 100%; 
+    width: 160px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 60px; /* Stay at the top */
+    left: 0;
+    background-color: floralwhite;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 16px;
+  }
+.sidenavHeader{
+    margin: 8px;
+    font-size: 1.35vw;
+}
+/* The navigation menu links */
+.sidenav a {
+padding: 8px 8px 8px 16px;
+text-decoration: none;
+font-size: 1.2vw;
+color: #252422;
+display: block;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: #eb5e28;
+}
+/* Style page content */
+.main {
+margin-left: 180px;
+padding: 0px 10px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 1vw;}
+}
+.infoContainer{
+    float:left;
+    height: auto;
+    clear: left;
+}
+.infoContainer p{
+    width:auto;
+    font-size: 1.25vw;
+    padding: 6px;
+    margin-left: 6px; 
+}
+/* Centering Figure/Image (Not Working :( )*/
+figure{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+/* Orange horizontal line (hl) */
+.hl{
+    clear: both;
+    border-bottom: 2px solid #EB5E28;
+    width: auto;
+    margin: 40px 120px 40px 120px;
+}
+/* End of Past Page Styling*/
