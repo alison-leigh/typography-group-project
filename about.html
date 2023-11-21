@@ -8,85 +8,80 @@
     <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="script/nav.js"></script>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/greeter.js"></script>
 </head>
 <body>
 <!-- navigation -->
 <section id="navBar" name="navigation bar">
-   <nav class="navbar navbar-expand-md">
-       <div class="container-fluid">
-           <a class="navbar-brand" href="#">Typography</a>
-           <div id="greeter">Hello {{user}}</div>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-               <ul class="navbar-nav orange">
-                   <li class="nav-item">
-                       <a class="nav-link" href="index.html">Home</a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link currentPage" aria-current="page" href="about.html">About Us</a>
-                   </li>
-                   <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           History of Type
-                       </a>
-                       <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="history/timeline.html">Timeline</a></li>
-                           <li><a class="dropdown-item" href="history/past.html">Past</a></li>
-                           <li><a class="dropdown-item" href="history/present.html">Present</a></li>
-                           <li><a class="dropdown-item" href="history/future.html">Future</a></li>
-                       </ul>
-                   </li>
-                   <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           Playground
-                       </a>
-                       <ul class="dropdown-menu dropdown-menu-end">
-                           <li><a class="dropdown-item" href="playground/quiz.html">What Font Are You?</a></li>
-                           <li><a class="dropdown-item" href="playground/fonts.html">Play With Fonts</a></li>
-                       </ul>
-                   </li>
-               </ul>
-           </div>
-       </div>
-   </nav>
-</section>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Typography</a>
+            <div id="greeter"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav orange">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link currentPage" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            History of Type
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="history/timeline.html">Timeline</a></li>
+                            <li><a class="dropdown-item" href="history/past.html">Past</a></li>
+                            <li><a class="dropdown-item" href="history/present.html">Present</a></li>
+                            <li><a class="dropdown-item" href="history/future.html">Future</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="quiz.html">Personality Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ </section>
 <br>
 <!-- main info section. collapses into a column after medium breakpoint. -->
 <section class="main container-fluid mt-4">
     <h1 class="m-3 mt-4 fs-1 text-center">About the Team</h1>
-    <h2 class="m-3 mt-4 fs-5 text-center">Click each description to see their portfolio.</h2>
+    <h2 class="m-3 mt-4 fs-5 text-center">Click each name to see more of their work.</h2>
     <br>
     <div class="d-flex flex-wrap flex-row justify-content-center gap-4 sectionStyle">
-        <div class=" p-2 teamContainer">
-            <img src="https://placehold.co/200x200.png" alt="">
-            <h3>Alison Christen</h3>
-            <h5>Javascript Dev., Front-End Dev.</h5>
-            <p>
-                Notorious code-enjoyer
-                </p>
-        </div>
-        <div class="vl"></div>
-        <div class="p-2 teamContainer">
-            <img src="https://placehold.co/200x200.png" alt="">
-            <h3>Emily McCamy</h3>
-            <h5>QA/Testing, Content Researcher</h5>
-            <p>
-                Emily is a Technical Communication major at Kennesaw State University.
-                  She envisions a career where she can contribute her expertise to making 
-                  technology accessible to a broader audience. Her goal is to become a 
-                  technical communicator who not only simplifies complex information but
-                   also enhances the user experience, ensuring that technology becomes a 
-                   tool that empowers and enriches people's lives. 
-                </p>
-        </div>
+            <div class=" p-2 teamContainer">
+                <img src="https://placehold.co/200x200.png" alt="">
+                <a href="alisonchristen.com" alt="Alison Christen Website">Alison Christen</a>
+                <h5>Javascript Dev., Front-End Dev.</h5>
+                <p>
+                    Notorious code-enjoyer
+                    </p>
+            </div>
+            <div class="vl"></div>
+            <div class="p-2 teamContainer">
+                <img src="https://placehold.co/200x200.png" alt="">
+                <h3>Emily McCamy</h3>
+                <h5>QA/Testing, Content Researcher</h5>
+                <p>
+                    Emily is a Technical Communication major at Kennesaw State University.
+                    She envisions a career where she can contribute her expertise to making 
+                    technology accessible to a broader audience. Her goal is to become a 
+                    technical communicator who not only simplifies complex information but
+                    also enhances the user experience, ensuring that technology becomes a 
+                    tool that empowers and enriches people's lives. 
+                    </p>
+            </div>
         <div class="vl" id="displayNone"></div>
         <div class="p-2 teamContainer">
             <img src="https://placehold.co/200x200.png" alt="">
-            <h3>Kaitlyn Carlsen</h3>
+            <a href="kc3800.lol" alt="Kaitlyn Carlsen Website">Kaitlyn Carlsen</a>
             <h5>Front-End Dev., Content Researcher</h5>
             <p>
                 Transitioning from a career in Human Resources, Kaitlyn is an Interactive 

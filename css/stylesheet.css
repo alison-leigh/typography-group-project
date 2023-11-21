@@ -22,6 +22,12 @@ nav {
 .navbar-brand:hover {
     color: floralwhite;
 }
+.nav-link:visited {
+    color: #eb5e28;
+}
+.navbar-brand:visited {
+    color: #eb5e28;
+}
 /* Important! Make sure to put this class on the current page's nav-link in Nav Bar*/
 .currentPage{
     color: floralwhite !important;
@@ -46,6 +52,13 @@ h2{
     font-size: 2vw;
     padding: 4px;
 }
+.sectionStyle a{
+    color: #EB5E28;
+    text-decoration: underline;
+    font-family: 'PT Serif', Serif;
+    font-size: 2vw;
+    padding: 4px;
+}
 .sectionStyle h5{
     font-size: 1.5vw;
     padding: 4px;
@@ -63,7 +76,8 @@ h2{
     border-radius: 16px;
 }
 .teamContainer img{
-    margin-left:auto;
+    display:block;
+    margin-left: auto;
     margin-right: auto;
 }
 .teamContainer:hover{
