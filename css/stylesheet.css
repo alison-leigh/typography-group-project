@@ -49,23 +49,23 @@ h2{
 .sectionStyle h3{
     color: #EB5E28;
     font-family: 'PT Serif', Serif;
-    font-size: 2vw;
+    font-size: 2em;
     padding: 4px;
 }
 .sectionStyle a{
     color: #EB5E28;
     text-decoration: underline;
     font-family: 'PT Serif', Serif;
-    font-size: 2vw;
     padding: 4px;
 }
 .sectionStyle h5{
-    font-size: 1.25vw;
+    font-size: 1.25em;
     padding: 4px;
+    font-weight: bold;
 }
 .sectionStyle p{
     height:auto;
-    font-size: 1.15vw;
+    font-size: 1.2em;
     text-align: left;
     padding: 4px;
 }
@@ -294,8 +294,30 @@ figure{
 }
 /* End of Past Page Styling*/
 
-/* Overwriting bootstrap */
+/* Overwriting bootstrap the lazy way. If this messes something up, tell Alison. */
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: white;
+}
+
+#firstName {
+    max-width: 400px;
+}
+
+/* no colors anymore, i want them to turn black~ (overwrites bootstrap's primary button color) */
+.btn-primary{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #000;
+    --bs-btn-border-color: #EB5E28;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #181818;
+    --bs-btn-hover-border-color: #EB5E28;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #181818;
+    --bs-btn-active-border-color: #EB5E28;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #ccc;
+    --bs-btn-disabled-border-color: #ccc;
 }
