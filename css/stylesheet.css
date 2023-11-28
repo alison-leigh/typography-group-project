@@ -64,7 +64,6 @@ h2{
     padding: 4px;
 }
 .sectionStyle p{
-    width: 200px;
     height:auto;
     font-size: 1.15vw;
     text-align: left;
@@ -74,6 +73,7 @@ h2{
 .teamContainer{
     border: 2px solid floralwhite;
     border-radius: 16px;
+    max-width: 400px;
 }
 .teamContainer img{
     display:block;
@@ -240,7 +240,6 @@ h2{
     z-index: 1; /* Stay on top */
     top: 60px; /* Stay at the top */
     left: 0;
-    background-color: floralwhite;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 16px;
   }
@@ -294,3 +293,9 @@ figure{
     margin: 40px 120px 40px 120px;
 }
 /* End of Past Page Styling*/
+
+/* Overwriting bootstrap */
+
+.navbar-nav .nav-link.active{
+    color: white;
+}
