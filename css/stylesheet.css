@@ -241,17 +241,19 @@ h2{
     top: 60px; /* Stay at the top */
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 16px;
+    /*padding-top: 16px;*/
+
+    transition: top .24s ease-in-out; /* makes the scrolling animation smoother when that js code hits it */
   }
 .sidenavHeader{
     margin: 8px;
-    font-size: 1.35vw;
+    font-size: 1.35em;
 }
 /* The navigation menu links */
 .sidenav a {
 padding: 8px 8px 8px 16px;
 text-decoration: none;
-font-size: 1.2vw;
+font-size: 1.2em;
 color: #252422;
 display: block;
 }
@@ -267,7 +269,7 @@ padding: 0px 10px;
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
-.sidenav a {font-size: 1vw;}
+.sidenav a {font-size: 1em;}
 }
 .infoContainer{
     float:left;
@@ -276,7 +278,7 @@ padding: 0px 10px;
 }
 .infoContainer p{
     width:auto;
-    font-size: 1.25vw;
+    font-size: 1.25em;
     padding: 6px;
     margin-left: 6px; 
 }
