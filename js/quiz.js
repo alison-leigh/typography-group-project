@@ -1,12 +1,12 @@
-var questionNumber = 0;
-var quizActive = true;
+let questionNumber = 0;
+let quizActive = true;
 
 // i used the 4 temperaments to use as an example of potential personalities for fonts
 // you can add more personalities/potential font results
 // BUT!! you must also modify the array lengths in var answerValues so they are EQUAL to the number of potential results,
 // and modify the point assignment by adding +1 for each new personality added.
 
-var userStats =	[
+let userStats =	[
     0,	// Times New Roman: Classic, stuffy, traditional
     0, 	// Comic Sans: Goofy, clownish
     0, 	// Lobster: Gregarious, popular, jock-ish
@@ -14,17 +14,17 @@ var userStats =	[
     0, // Homemade Apple: country chic
 ];
 
-var tempStats = userStats; // temporarily holds the user stats
+let tempStats = userStats; // temporarily holds the user stats
 
 // stores the text fpr each question, separated by commas
-var questionText =	[
-    "1. Which streaming service is your favorite?", // Question #1 (answers: lorem1, ipsum, dolor, sit, amet, consectetur)
+const questionText =	[
+    "Which streaming service is your favorite?", // Question #1 (answers: lorem1, ipsum, dolor, sit, amet, consectetur)
 ];
 
 // the arrays contain answers for each question, separated by commas.
 // each question should have the same amount of possible answers for math reasons (scroll down to var answerValues below)
 
-var answerText =	[
+const answerText =	[
     /* Q1 Options */ [ "Peacock" /*apple*/, "Crunchyroll" /*ubuntu*/, "ESPN" /*lobster*/ , "Cable" /*TNR*/, "Prime" /*comic*/],
     // /* Q2 Options */ [ "Lorem2", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur"],
     // /* Q3 Options */ [ "Lorem3", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur"],
@@ -36,7 +36,7 @@ var answerText =	[
 //1 Times New Roman, 2 Comic Sans, 3 Lobster, 4 Ubuntu, 5 Homemade Apple
 // you can add as many questions as you want, but the array length should remain the same to correspond to the personalities/fonts
 
-var answerValues =	[		//question 1 answer values
+const answerValues =	[		//question 1 answer values
     /* Q#1 */    [ [0,0,0,0,4], // "Peacock"
         [0,0,0,4,0], // "Crunchyroll"
         [0,0,4,0,0], // "ESPN"
@@ -82,7 +82,6 @@ function changeState() {
         buttonElement.innerHTML = "Pick an answer first!";
 
     } else {
-
         setCustomPage(); // displays the quiz results page
     }
 }
@@ -90,11 +89,11 @@ function changeState() {
 
 function initText(question) {
 
-    var answerSelection = "";
+    let answerSelection = "";
 
     for (i = 0; i < answerText[question].length; i++) {
 
-        answerSelection += "<li><input type='radio' name='question" +
+        answerSelection += "<li class='quizAnswer'><input type='radio' name='question" +
             (question+1) + "' onClick='setAnswer("+i+")' id='" + answerText[question][i] + "'><label for='" + answerText[question][i] + "'>" + answerText[question][i] + "</label></li>";
     }
 
@@ -142,7 +141,7 @@ function updatePersonality() {
 
 function setCustomPage() {
 
-    var highestStatPosition = 0;
+    let highestStatPosition = 0;
 
     for (i = 1; i < userStats.length; i++) {
 
@@ -204,5 +203,3 @@ function displayCustomPage(personality) {
 
     }
 }
-
-console.log()

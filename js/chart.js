@@ -5,7 +5,7 @@ function displayResultsChart() {
         data: {
             labels: ['Times New Roman', 'Comic Sans', 'Lobster', 'Ubuntu', 'Homemade Apple'],
             datasets: [{
-               // label: 'Personality Score',
+                label: 'Your Personality Rankings',
                 data: userStats,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
