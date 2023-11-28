@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/greeter.js"></script>
-  <script src="js/quiz.js"></script>
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/greeter.js"></script>
 </head>
 <body>
 <!-- navigation -->
@@ -45,7 +46,7 @@
           </li>
          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="quiz.html">Personality Quiz</a>
-          </li>
+        </li>
         </ul>
       </div>
     </div>
@@ -63,8 +64,13 @@
 <div id="results">
   <h1>Results</h1>
   <p>You are <span id="topScore"></span></p>
+    <canvas id="resultsChart" width="600" height="600"></canvas>
   <div style="clear:both;"></div>
   <p><a href="javascript:window.location.href=window.location.href">Try again?</a></p>
 </div>
+
+
+<script src="js/quiz.js"></script>
+<script src="js/chart.js"></script>
 </body>
 </html>
