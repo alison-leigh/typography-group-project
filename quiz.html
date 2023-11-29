@@ -17,6 +17,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/greeter.js"></script>
+
+    <!-- import a bunch o fonts -->
+
+
+
 </head>
 <body>
 <!-- navigation -->
@@ -56,22 +61,26 @@
     </nav>
 </section>
 
+<h1 class="m-3 mt-4 fs-1 text-center position-relative">What font are you?</h1>
 
-<h1 class="m-3 mt-4 fs-1 text-center">What font are you?</h1>
-<div id="quiz" class="container-md m-3 align-self-center">
-  <div id="question">We know you've been dying to know. What font resonates within your soul?</div>
-  <ul id="answer">
-  </ul>
-    <button type="button" class="btn btn-primary m-3" id="startButton" onclick="changeState()">I'm ready to rediscover myself.</button>
-</div>
-<div id="results">
-  <h1>Results</h1>
-  <p>You are <span id="topScore"></span></p>
-    <canvas id="resultsChart"></canvas>
-  <div style="clear:both;"></div>
-  <p>
-      <button type="button" class="btn btn-primary" onclick="location.href='http://localhost:63342/typography-group-project/quiz.html'">Try again?</button>
-  </p>
+<div id="quizContainer" class="position-relative">
+    <div id="quiz" class="container-sm form-check">
+        <div id="question">We know you've been dying to know. What font resonates within your soul?</div>
+        <ul id="answer"></ul>
+        <button type="button" class="btn btn-primary m-3" id="startButton" onclick="changeState()">I'm ready to
+            rediscover myself.
+        </button>
+    </div>
+    <div id="results">
+        <h1>Results</h1>
+        <p>You are <span id="topScore"></span></p>
+        <canvas id="resultsChart"></canvas>
+<!--        <div style="clear:both;"></div>-->
+        <p>
+            <button type="button" class="btn btn-primary" onclick="location.reload()">Try again?</button>
+        </p>
+    </div>
+    <div id="error">Uh oh! Something went wrong. Refresh the page and try again.</div>
 </div>
 
 

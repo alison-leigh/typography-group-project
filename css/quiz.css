@@ -1,13 +1,58 @@
 #results {
   display: none;
+  margin: 0 auto;
+}
+#results h1 {
+  text-align: center;
+}
+#results p {
+  text-align: center;
+}
+
+#error {
+  display: none;
 }
 
 #resultsChart {
-  min-width: 500px;
+  display: inline-block;
+  max-width: 500px;
+  max-height: 500px;
 }
 
-* {
-  border: 1px solid red;
+#quiz {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#quiz ul {
+  list-style-type: none;
+}
+#quiz li {
+  margin: 1em 0;
+  padding: 1em;
+}
+#quiz input[type=radio] {
+  padding: 0.5em;
+}
+#quiz #question {
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#quiz .form-check-input {
+  border: 1px solid #000;
+}
+#quiz .form-check-input:checked {
+  background-color: #EB5E28;
+  border-color: #EB5E28;
+}
+
+.apple #topScore {
+  font-family: Home;
+}
+
+.wingding {
+  font-family: Wingdings, "Wingdings 2", "Wingdings 3";
 }
 
 /*# sourceMappingURL=quiz.css.map */

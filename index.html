@@ -70,17 +70,26 @@
                 <li>info here</li>
             </ul>
         </section>
-<!--       form placeholder-->
         <section id="signup" name="sign up" class="col-md">
             <h1>Hey There!</h1>
             <p>What's your name?</p>
             <div class="mb-3 mx-sm-3">
                 <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control mb-2 " id="firstName">
+                <input type="text" class="form-control mb-2" id="firstName">
             </div>
             <button type="button" class="btn btn-primary" id="nameButton">That's my name!</button>
         </section>
     </div>
 </section>
 </body>
+<script>
+    // clicks the #nameButton when the user presses the enter key
+    $(document).ready(function(){
+        $('#firstName').on("keypress",(function(event){
+            if (event.which === 13) {
+                $('#nameButton').click();
+            }
+        }));
+    });
+</script>
 </html>

@@ -12,53 +12,92 @@ let userStats =	[
     0, 	// Lobster: Gregarious, popular, jock-ish
     0, 	// Ubuntu: weeaboo
     0, // Homemade Apple: country chic
+    0, // Helvetica: hipster
+    0, // Arial: basic
+    0 // Wingdings
 ];
+
+let userLabels = ['Times New Roman', 'Comic Sans', 'Lobster', 'Ubuntu', 'Homemade Apple', 'Helvetica', 'Arial', 'Wingdings'];
 
 let tempStats = userStats; // temporarily holds the user stats
 
 // stores the text fpr each question, separated by commas
 const questionText =	[
-    "Which streaming service is your favorite?", // Question #1 (answers: lorem1, ipsum, dolor, sit, amet, consectetur)
+    "Which streaming service is your favorite?", // Q1
+    "Pick a fun weekend activity.", //Q2
+    "Pick a pair of shoes.", //Q3
+    "Where would you love to travel to?", //Q4
+    "What's your favorite drink?", //Q5
+    "What is your favorite social app?" //Q6
 ];
 
 // the arrays contain answers for each question, separated by commas.
 // each question should have the same amount of possible answers for math reasons (scroll down to var answerValues below)
 
 const answerText =	[
-    /* Q1 Options */ [ "Peacock" /*apple*/, "Crunchyroll" /*ubuntu*/, "ESPN" /*lobster*/ , "Cable" /*TNR*/, "Prime" /*comic*/],
-    // /* Q2 Options */ [ "Lorem2", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur"],
-    // /* Q3 Options */ [ "Lorem3", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur"],
+    /* Q1 Options */ [ "Peacock", "Crunchyroll", "ESPN", "I don't use streaming services.", "Netflix", `<span class="wingding">Im not picky</span>`],
+    /* Q2 Options */ [ "Some sort of physical activity. I like to stay active.", "Reading a book.", "Taking pics or filming fun videos to post on my socials.", "Taking it easy. Maybe gaming, maybe catching up on sleep.", "Horseback riding.", "<span class=\"wingding\">Just lil Wingding Thangs</span>"],
+    /* Q3 Options */ [ "Oxfords or kitten heels.", "Crocs! They're comfy and easy to wear!", "Uggs. They're SO cozy and they're back in style.", "Nothing beats a well-made pair of boots.", "My Chucks.", "<span class=\"wingding\">I dont have feet or maybe I do!</span>"],
+    /* Q4 Options */ [ "", "", "", "", "<span class=\"wingding\"></span>"],
+    /* Q5 Options */ [ "", "", "", "", "<span class=\"wingding\"></span>"],
+    /* Q6 Options */ [ "", "", "", "", "<span class=\"wingding\"></span>"],
 ]
 
 
-// assign a value from 0-3 points for each column representing the four personality types
+// assign a value from 0-7 points for each column representing the four personality types
 // use each number only once per answer
-//1 Times New Roman, 2 Comic Sans, 3 Lobster, 4 Ubuntu, 5 Homemade Apple
+//[0] Times New Roman, 1 Comic Sans, 2 Lobster, 3 Ubuntu, 4 Homemade Apple, 5 Helvetica, 6 Arial, 7 Wingdings
 // you can add as many questions as you want, but the array length should remain the same to correspond to the personalities/fonts
 
 const answerValues =	[		//question 1 answer values
-    /* Q#1 */    [ [0,0,0,0,4], // "Peacock"
-        [0,0,0,4,0], // "Crunchyroll"
-        [0,0,4,0,0], // "ESPN"
-        [4,0,0,0,0], // "Cable"
-        [0,4,0,0,0] // "Prime"
-     ]//,
-    //
-    // /* Q#2 */    [ [3,2,1,0], // "Answer 1"
-    //     [0,3,1,2], // "Answer 2"
-    //     [3,0,2,1], // "Answer 3"
-    //     [3,0,1,2], // "Answer 4"
-    //     [0,2,1,3], // "Answer 5"
-    //     [1,0,3,2]  // "Answer 6"
-    // ],
-    //
-    // /* Q#3 */    [ [3,2,1,0], // "Answer 1"
-    //     [0,3,1,2], // "Answer 2"
-    //     [3,0,2,1], // "Answer 3"
-    //     [3,0,1,2], // "Answer 4"
-    //     [0,2,1,3], // "Answer 5"
-    //     [1,0,3,2]  // "Answer 6"
-    // ]
+    /* Q#1 */    [
+        [3 /*tnr*/,0 /*cs*/,4 /*lob*/,0 /*ub*/,5 /*ha*/,0 /*hel*/,3 /*ari*/,0 /*wing*/], // "Peacock"
+        [0 /*tnr*/,4 /*cs*/,0 /*lob*/,5 /*ub*/,0 /*ha*/,4 /*hel*/,0 /*ari*/,2 /*wing*/], // "Crunchyroll"
+        [0 /*tnr*/,0 /*cs*/,5 /*lob*/,0 /*ub*/,4 /*ha*/,0 /*hel*/,3 /*ari*/,0 /*wing*/], // "ESPN"
+        [5 /*tnr*/,0 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,4 /*hel*/,0 /*ari*/,0 /*wing*/], // "None"
+        [0 /*tnr*/,5 /*cs*/,4 /*lob*/,1 /*ub*/,0 /*ha*/,0 /*hel*/,3 /*ari*/,0 /*wing*/], // "Netflix"
+        [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
+     ],
+    /* Q#2 */    [
+        [0 /*tnr*/,0 /*cs*/,5 /*lob*/,0 /*ub*/,3 /*ha*/,0 /*hel*/,2 /*ari*/,0 /*wing*/], // Physical Activity
+        [4 /*tnr*/,0 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,5 /*hel*/,0 /*ari*/,0 /*wing*/], // Reading a book
+        [0 /*tnr*/,4 /*cs*/,3 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,5 /*ari*/,0 /*wing*/], // Content creation
+        [0 /*tnr*/,4 /*cs*/,0 /*lob*/,5 /*ub*/,0 /*ha*/,3 /*hel*/,0 /*ari*/,0 /*wing*/], // Catching up on sleep
+        [4 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,5 /*ha*/,0 /*hel*/,1 /*ari*/,0 /*wing*/], // Horseback Riding
+        [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
+    ],
+    /* Q#3 */    [
+        [5 /*tnr*/,0 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,3 /*hel*/,0 /*ari*/,0 /*wing*/], // Classic
+        [0 /*tnr*/,5 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,3 /*hel*/,0 /*ari*/,0 /*wing*/], // Crocs
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,5 /*ari*/,0 /*wing*/], // Uggs
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,5 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Boots
+        [0 /*tnr*/,0 /*cs*/,5 /*lob*/,4 /*ub*/,0 /*ha*/,5 /*hel*/,0 /*ari*/,0 /*wing*/], // Chucks
+        [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
+    ],
+    /* Q#4 */    [
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
+    ],
+    /* Q#5 */    [
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
+    ],
+    /* Q#6 */    [
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
+    ],
 ]
 
 // DOM references
@@ -93,15 +132,16 @@ function initText(question) {
 
     for (i = 0; i < answerText[question].length; i++) {
 
-        answerSelection += "<li class='quizAnswer'><input type='radio' name='question" +
-            (question+1) + "' onClick='setAnswer("+i+")' id='" + answerText[question][i] + "'><label for='" + answerText[question][i] + "'>" + answerText[question][i] + "</label></li>";
+        answerSelection += "<li class='quizAnswer'><input class='form-check-input' type='radio' name='question" +
+            (question+1) + "' onClick='setAnswer("+i+")' id='" + answerText[question][i] + "'><label class='form-check-label' for='" + answerText[question][i] + "'>" + answerText[question][i] + "</label></li>";
+
+        // makes the li item click-to-select instead. pita to change the code to implement it, but it would be neat if i have the time
+        // answerSelection += "<li class='quizAnswer' onClick='setAnswer("+i+")>" + answerText[question][i] + "</li>";
     }
 
     document.getElementById("question").innerHTML = questionText[question];	// sets questions' text
     document.getElementById("answer").innerHTML = answerSelection;		// sets answers' text
 }
-
-
 
 function setAnswer(input) {
 
@@ -127,7 +167,7 @@ function setAnswer(input) {
 
 function clearTempStats() {
 
-    tempStats = [0,0,0,0];	// resets personality stats
+    tempStats = [0,0,0,0,0,0,0,0];	// resets personality stats
 }
 
 
@@ -164,42 +204,70 @@ function displayCustomPage(personality) {
     switch (personality) {
 
         case 0:	// Times New Roman
-            results.style.display = "inline-block";
+            results.style.display = "block";
             results.classList.add("tnr");
             body.background = "none";
-            printResult.innerText = "Times New Roman";
+            printResult.innerText = userLabels[0];
+            console.log(userLabels[0]);
             break;
 
         case 1:		// Comic Sans
-            results.style.display = "inline-block";
-            results.classList.add("font2");
+            results.style.display = "block";
+            results.classList.add("comicSans");
             body.background = "none";
-            printResult.innerText = "Comic Sans";
+            printResult.innerText = userLabels[1];
+            console.log(userLabels[1]);
             break;
 
         case 2: // Lobster
-            results.style.display = "inline-block";
-            results.classList.add("font3");
+            results.style.display = "block";
+            results.classList.add("lobster");
             body.background = "none";
-            printResult.innerText = "Lobster";
+            printResult.innerText = userLabels[2];
+            console.log(userLabels[2]);
             break;
 
         case 3:		// Ubuntu
-            results.style.display = "inline-block";
-            results.classList.add("font4");
+            results.style.display = "block";
+            results.classList.add("ubuntu");
             body.background = "none";
-            printResult.innerText = "Ubuntu";
+            printResult.innerText = userLabels[3];
+            console.log(userLabels[3]);
             break;
         case 4:		// Homemade Apple
-            results.style.display = "inline-block";
-            results.classList.add("font4");
+            results.style.display = "block";
+            results.classList.add("apple");
+            body.background = "pink";
+            printResult.innerText = userLabels[4];
+            console.log(userLabels[4]);
+            break;
+        case 5:
+            results.style.display = "block";
+            results.classList.add("helvetica");
             body.background = "none";
-            printResult.innerText = "Homemade Apple";
+            printResult.innerText = userLabels[5];
+            console.log(userLabels[5]);
+            break;
+        case 6:
+            results.style.display = "block";
+            results.classList.add("arial");
+            body.background = "none";
+            printResult.innerText = userLabels[6];
+            console.log(userLabels[6]);
+            break;
+        case 7:
+            results.style.display = "block";
+            results.classList.add("wingdings");
+            body.background = "none";
+            printResult.innerText = userLabels[7];
+            console.log(userLabels[7]);
             break;
 
 
         default:
-            document.getElementById("error").style.display = "inline-block";
+            document.getElementById("error").style.display = "block";
 
     }
 }
+
+

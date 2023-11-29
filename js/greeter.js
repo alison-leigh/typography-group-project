@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     // stores user inputted name to local storage
     $("#nameButton").click(function(){
-
+        if ($("#firstName").val()){
         let firstName = $("#firstName").val();
 
         // capitalizes the user's first name for ✨aesthetics✨
@@ -12,7 +12,7 @@ $(document).ready(function(){
 
         console.log(capitalizedName);
 
-        $("#greeter").text(`Hello, ${capitalizedName}!`);
+        $("#greeter").text(`Hello, ${capitalizedName}!`);}
     });
 
     // if there's already a name in storage, it displays it on page load
