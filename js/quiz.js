@@ -38,9 +38,9 @@ const answerText =	[
     /* Q1 Options */ [ "Peacock", "Crunchyroll", "ESPN", "I don't use streaming services.", "Netflix", `<span class="wingding">Im not picky</span>`],
     /* Q2 Options */ [ "Some sort of physical activity. I like to stay active.", "Reading a book.", "Taking pics or filming fun videos to post on my socials.", "Taking it easy. Maybe gaming, maybe catching up on sleep.", "Horseback riding.", "<span class=\"wingding\">Just lil Wingding Thangs</span>"],
     /* Q3 Options */ [ "Oxfords or kitten heels.", "Crocs! They're comfy and easy to wear!", "Uggs. They're SO cozy and they're back in style.", "Nothing beats a well-made pair of boots.", "My Chucks.", "<span class=\"wingding\">I dont have feet or maybe I do!</span>"],
-    /* Q4 Options */ [ "", "", "", "", "<span class=\"wingding\"></span>"],
-    /* Q5 Options */ [ "", "", "", "", "<span class=\"wingding\"></span>"],
-    /* Q6 Options */ [ "", "", "", "", "<span class=\"wingding\"></span>"],
+    /* Q4 Options */ [ "Portand", "Vermont in the fall", "Nashville", "Tokyo", "Panama City Beach" ,"<span class=\"wingding\">Anywhere</span>"],
+    /* Q5 Options */ [ "Martini", "Monster Energy", "A cold one", "Cold Drip Coffee","PSL", "<span class=\"wingding\">A creature like me does not yearn for sustenance</span>"],
+    /* Q6 Options */ [ "Facebook", "Pinterest", "Discord", "Twitter/X", "Tiktok", "<span class=\"wingding\">icons8</span>"],
 ]
 
 
@@ -68,34 +68,34 @@ const answerValues =	[		//question 1 answer values
     ],
     /* Q#3 */    [
         [5 /*tnr*/,0 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,3 /*hel*/,0 /*ari*/,0 /*wing*/], // Classic
-        [0 /*tnr*/,5 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,3 /*hel*/,0 /*ari*/,0 /*wing*/], // Crocs
+        [0 /*tnr*/,5 /*cs*/,0 /*lob*/,3 /*ub*/,3 /*ha*/,3 /*hel*/,0 /*ari*/,0 /*wing*/], // Crocs
         [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,5 /*ari*/,0 /*wing*/], // Uggs
         [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,5 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Boots
         [0 /*tnr*/,0 /*cs*/,5 /*lob*/,4 /*ub*/,0 /*ha*/,5 /*hel*/,0 /*ari*/,0 /*wing*/], // Chucks
         [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
     ],
     /* Q#4 */    [
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Portand
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Vermont in the fall
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Nash
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Tokyo
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Panama City Beach
         [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
     ],
     /* Q#5 */    [
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [5 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Martini
+        [0 /*tnr*/,5 /*cs*/,4 /*lob*/,4 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // monster
+        [0 /*tnr*/,0 /*cs*/,5 /*lob*/,0 /*ub*/,5 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //A cold one
+        [3 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,5 /*hel*/,2 /*ari*/,0 /*wing*/], // Cold Drip Coffee
+        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,3 /*ha*/,0 /*hel*/,5 /*ari*/,0 /*wing*/], // PSL
         [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
     ],
     /* Q#6 */    [
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
-        [0 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], //
+        [5 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,5 /*ha*/,0 /*hel*/,5 /*ari*/,0 /*wing*/], // Facebook
+        [1 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,5 /*hel*/,4 /*ari*/,0 /*wing*/], // Pinterest
+        [0 /*tnr*/,4 /*cs*/,3 /*lob*/,5 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Discord
+        [4 /*tnr*/,4 /*cs*/,5 /*lob*/,3 /*ub*/,5 /*ha*/,0 /*hel*/,0 /*ari*/,0 /*wing*/], // Twitter/X
+        [0 /*tnr*/,4 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,3 /*hel*/,5 /*ari*/,0 /*wing*/], // Tiktok
         [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
     ],
 ]
@@ -154,9 +154,6 @@ function setAnswer(input) {
         buttonElement.disabled = false;
 
     } else {
-
-
-
         quizActive = false;
         buttonElement.innerHTML = "Let's peer into your psyche and find your inner font..."
         buttonElement.disabled = false;
