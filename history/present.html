@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/stylesheet.css">
-    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="../js/greeter.js"></script>
 </head>
 <body>
@@ -58,7 +58,7 @@
 <!-- Side navigation for page bookmarks -->
 <section id="main" name="main content" class="container-fluid">
     <div class="row">
-        <div class="sideNavContainer col-2">
+        <div class="col-2">
             <div class="sidenav displayNone">
                 <p class="sidenavHeader"><b>Quick Links</b></p>
                 <a href="#MT">Modern Typeface Creation</a>
@@ -181,9 +181,9 @@
                 let scrollPosition = $(window).scrollTop();
 
                 if (scrollPosition > navBarHeight) {
-                    $('.sideNavContainer').css('top', '0');
+                    $('.sidenav').css('top', '0');
                 } else {
-                    $('.sideNavContainer').css('top', '60px');
+                    $('.sidenav').css('top', '60px');
                 }
             });
         });
