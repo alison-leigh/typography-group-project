@@ -99,12 +99,7 @@ h2{
     margin: 50px 0px 50px 0px;
     
 }
-/* Causes the middle vertical line (vl) to disappear for small screens*/
-@media (max-width: 767.98px) {
-    .displayNone{
-        display:none;
-    }
- }
+
 /* End of About Us Page Styling */
 
 /* Start of Timeline Page Styling */
@@ -303,6 +298,20 @@ figure{
     margin: 40px 120px 40px 120px;
 }
 /* End of Past Page Styling*/
+
+/* hi i moved your media query down here so it overwrites the other stuff
+
+this is for the History pages' styling*/
+
+/* Causes the middle vertical line (vl) to disappear for small screens*/
+@media (max-width: 767.98px) {
+    .displayNone{ /* Causes the middle vertical line (vl) to disappear for small screens*/
+        display:none;
+    }
+    .main{
+        margin-left: 2em;
+    }
+}
 
 /* Overwriting bootstrap the lazy way. If this messes something up, tell Alison. */
 
