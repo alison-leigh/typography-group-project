@@ -6,11 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Typography</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/greeter.js"></script>
@@ -19,15 +23,16 @@
 <!-- navigation -->
 <!-- navigation -->
 <section id="navBar" name="navigation bar">
-   <nav class="navbar navbar-expand-md navbar-dark">
-       <div class="container-fluid">
-           <a class="navbar-brand" href="#">Typography</a>
-           <div id="greeter"></div>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-               <ul class="navbar-nav orange">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Typography</a>
+            <div id="greeter"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav orange">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
@@ -35,7 +40,8 @@
                         <a class="nav-link active" aria-current="page" href="../about.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
                             History of Type
                         </a>
                         <ul class="dropdown-menu">
@@ -56,118 +62,169 @@
 <br>
 <!-- body content-->
 <!-- Side navigation for page bookmarks -->
-<div class="sidenav col">
-    <p class="sidenavHeader"><b>Quick Links</b></p>
-    <a href="FTT">Future Technology</a>
-    <a href="#FYNP">Typography Tips</a>
-</div>
-<div class="main sectionStyle">
-    <!--Future Typography Technology Section-->
-    <h2 id="FTT">Future Typography Technology</h2>
-    <br>
-    <div class="container-fluid row">
-        <div class="infoContainer col m-3 p-2">
-            <h3>OpenDylexic Typeface</h3>
-            <p>OpenDyslexic is a new open sourced font created to increase readability for readers with dyslexia. 
-            </p>
-            <p>Letters have heavy weighted bottoms to indicate direction. Readers are able to quickly figure out which
-                 part of the letter is down which aids in recognizing the correct letter, and can help to keep
-                  your brain from rotating them around.
-            </p>
-            <p>
-                OpenDyslexic is free to use, open source font which is continually updated through feedback and research.
-            </p>
+<section id="main" name="main content" class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <div class="sidenav">
+                <p class="sidenavHeader"><b>Quick Links</b></p>
+                <a href="FTT">Future Technology</a>
+                <a href="#FYNP">Typography Tips</a>
+            </div>
         </div>
-        <figure class="figure col">
-            <img src="https://placehold.co/300x300" class="figure-img img-fluid rounded m-3 mt-4 p-1" alt="...">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
-        </figure>
-        <a href="https://opendyslexic.org/">Learn More About the OpenDyslexic Font By Clicking Here</a>
+            <!-- main sectionStyle -->
+        <div class="col-10 main">
+                <!--Future Typography Technology Section-->
+                <h2 id="FTT">Future Typography Technology</h2>
+                <br>
+                <div class="container-fluid row">
+                    <div class="infoContainer col m-3 p-2">
+                        <h3>OpenDylexic Typeface</h3>
+                        <p>OpenDyslexic is a new open sourced font created to increase readability for readers with
+                            dyslexia.
+                        </p>
+                        <p>Letters have heavy weighted bottoms to indicate direction. Readers are able to quickly figure
+                            out which
+                            part of the letter is down which aids in recognizing the correct letter, and can help to
+                            keep
+                            your brain from rotating them around.
+                        </p>
+                        <p>
+                            OpenDyslexic is free to use, open source font which is continually updated through feedback
+                            and research.
+                        </p>
+                    </div>
+                    <figure class="figure col">
+                        <img src="https://placehold.co/300x300" class="figure-img img-fluid rounded m-3 mt-4 p-1"
+                             alt="...">
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+                    <a href="https://opendyslexic.org/">Learn More About the OpenDyslexic Font By Clicking Here</a>
+                </div>
+                <div class="hl row"></div>
+                <div class="container-fluid row">
+                    <div class="infoContainer col m-3 p-2">
+                        <h3>Variable Fonts</h3>
+                        <p>With variable fonts, the choice of exactly how heavy or slanted or wide (or any other
+                            parameter)
+                            type should be is <b>placed into the hands of the user</b>, rather than having those decided
+                            for us by
+                            the type designer.
+                        </p>
+                        <p>Traditionally, all possible weights and styles have been separated out into different font
+                            files, whereas
+                            variable fonts combine all of those variations into one.
+                        </p>
+                        <p>Because of this, overall file size is greatly reduced compared to loading multiple individual
+                            font files
+                            and thats a key consideration for web typography.
+                        </p>
+                    </div>
+                    <figure class="figure col">
+                        <img src="https://placehold.co/300x300" class="figure-img img-fluid rounded m-3 mt-4 p-1"
+                             alt="...">
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+                    <a href="https://etceteratype.co/grandstander">Experience the Grandstand Variable Font By Clicking
+                        Here</a>
+                </div>
+                <br>
+                <!--Typography Future Uses Section-->
+                <h2 id="FYNP">For Your Next Project: Typography Tips</h2>
+                <br>
+                <div class="container row">
+                    <div class="infoContainer col m-3 p-2">
+                        <h3>Best Typography Practices </h3>
+                        <p>There are thousands of typefaces available, with new ones constantly being released;
+                            along with the different color, sizing, and style options, there is more freedom
+                            than ever before. It's incredibly important for designers to be thoughtful and precise
+                            with their typography choices, in order to communicate clearly.
+                        </p>
+                        <ul>
+                            <li>Consider the Text:</li>
+                            <ul>
+                                <li>Read the text in its entirety before deciding on your typographic elements.</li>
+                            </ul>
+                            <li>Practice Restraint:</li>
+                            <ul>
+                                <li>Limit the number of competing elements, good typography doesn't usually require
+                                    more than a few weights.
+                                </li>
+                            </ul>
+                            <li>Be Aware:</li>
+                            <ul>
+                                <li>There are numerous displays your designs may be viewed on, stay informed and
+                                    adapt your designs to these environments.
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hl row"></div>
+                <div class="container-fluid row">
+                    <div class="infoContainer col m-3 p-2">
+                        <h3>Common Typography Mistakes</h3>
+                        <p>In the beginning, scribes were manufacturing books or documents by hand.
+                            The first typefaces were modeled on forms of calligraphy to mimic the handwriting of
+                            scribes.
+                        </p>
+                        <ol>
+                            <li>Don&apos;t use too many typefaces or styles</li>
+                            <ul>
+                                <li>Best practice is to use 2 typefaces (1 body text and one display/header typeface) to
+                                    avoid being distracting the users.
+                                </li>
+                            </ul>
+                            <li>Don&apos;t forget to kerning large type</li>
+                            <ul>
+                                <li>Kerning is the adjustment of space between 2 letters</li>
+                                <li>This prevents awkward spacing of larger letters or capital letters and makes the
+                                    font
+                                    look more professional.
+                                </li>
+                            </ul>
+                            <li>Don&apos;t feel the need to fill up all the negative space - leave some room for your
+                                design to breathe
+                            </li>
+                            <ul>
+                                <li>Negative space is a useful tool and will help define groups of information/
+                                    elements.
+                                </li>
+                            </ul>
+                            <li>Don&apos;t forget the importance of type hierarchy</li>
+                            <ul>
+                                <li>It is important to organize your information in order of importance and provide
+                                    visual cues to help
+                                    users make sense of the relationships between things.
+                                </li>
+                                <li>Things that are more important should be more prominent (larger, bolder, in a
+                                    distinct color, set off
+                                    by more white space, etc.)
+                                </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+            </div>
     </div>
-    <div class="hl row"></div>
-    <div class="container-fluid row">
-        <div class="infoContainer col m-3 p-2">
-            <h3>Variable Fonts</h3>
-            <p>With variable fonts, the choice of exactly how heavy or slanted or wide (or any other parameter)
-                 type should be is <b>placed into the hands of the user</b>, rather than having those decided for us by
-                  the type designer.  
-            </p>
-            <p>Traditionally, all possible weights and styles have been separated out into different font files, whereas
-                 variable fonts combine all of those variations into one.
-            </p>
-            <p>Because of this, overall file size is greatly reduced compared to loading multiple individual font files
-                 and thats a key consideration for web typography.
-            </p>
-        </div>
-        <figure class="figure col">
-            <img src="https://placehold.co/300x300" class="figure-img img-fluid rounded m-3 mt-4 p-1" alt="...">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
-        </figure>
-        <a href="https://etceteratype.co/grandstander">Experience the Grandstand Variable Font By Clicking Here</a>
-    </div>
-    <br>
-    <!--Typography Future Uses Section-->
-    <h2 id="FYNP">For Your Next Project: Typography Tips</h2>
-    <br>
-    <div class="container row">
-        <div class="infoContainer col m-3 p-2">
-            <h3>Best Typography Practices </h3>
-            <p>There are thousands of typefaces available, with new ones constantly being released;
-                 along with the different color, sizing, and style options, there is more freedom 
-                 than ever before. It's incredibly important for designers to be thoughtful and precise 
-                 with their typography choices, in order to communicate clearly. 
-            </p>
-            <ul>
-                <li>Consider the Text:</li>
-                <ul>
-                    <li>Read the text in its entirety before deciding on your typographic elements.</li>
-                </ul>
-                <li>Practice Restraint:</li>
-                <ul>
-                    <li>Limit the number of competing elements, good typography doesn't usually require
-                         more than a few weights.</li>
-                </ul>
-                <li>Be Aware:</li>
-                <ul>
-                    <li>There are numerous displays your designs may be viewed on, stay informed and
-                         adapt your designs to these environments.</li>
-                </ul>
-            </ul>
-        </div>
-    </div>
-    <div class="hl row"></div>
-    <div class="container-fluid row">
-        <div class="infoContainer col m-3 p-2">
-            <h3>Common Typography Mistakes</h3>
-            <p>In the beginning, scribes were manufacturing books or documents by hand. 
-                The first typefaces were modeled on forms of calligraphy to mimic the handwriting of scribes. 
-            </p>
-            <ol>
-                <li>Don&apos;t use too many typefaces or styles</li>
-                <ul>
-                    <li>Best practice is to use 2 typefaces (1 body text and one display/header typeface) to
-                         avoid being distracting the users.</li>
-                </ul>
-                <li>Don&apos;t forget to kerning large type</li>
-                <ul>
-                    <li>Kerning is the adjustment of space between 2 letters</li>
-                    <li>This prevents awkward spacing of larger letters or capital letters and makes the font
-                         look more professional.</li>
-                </ul>
-                <li>Don&apos;t feel the need to fill up all the negative space - leave some room for your design to breathe</li>
-                <ul>
-                    <li>Negative space is a useful tool and will help define groups of information/ elements.</li>
-                </ul>
-                <li>Don&apos;t forget the importance of type hierarchy</li>
-                <ul>
-                    <li>It is important to organize your information in order of importance and provide visual cues to help
-                         users make sense of the relationships between things.</li>
-                    <li>Things that are more important should be more prominent (larger, bolder, in a distinct color, set off
-                         by more white space, etc.)</li>
-                </ul>
-            </ol>
-        </div>
-    </div>
-</div>
+</section>
 </body>
+<footer>
+    <script>
+        // testin scroll
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+
+                let navBarHeight = $('#navBar').outerHeight();
+                let scrollPosition = $(window).scrollTop();
+
+                if (scrollPosition > navBarHeight) {
+                    $('.sidenav').css('top', '0');
+                } else {
+                    $('.sidenav').css('top', '60px');
+                }
+            });
+        });
+    </script>
+</footer>
 </html>

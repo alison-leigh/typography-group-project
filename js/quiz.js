@@ -238,21 +238,21 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[4];
             console.log(userLabels[4]);
             break;
-        case 5:
+        case 5: // Helvetica
             results.style.display = "block";
             results.classList.add("helvetica");
             body.background = "none";
             printResult.innerText = userLabels[5];
             console.log(userLabels[5]);
             break;
-        case 6:
+        case 6: // Arial
             results.style.display = "block";
             results.classList.add("arial");
             body.background = "none";
             printResult.innerText = userLabels[6];
             console.log(userLabels[6]);
             break;
-        case 7:
+        case 7: // Wingdings
             results.style.display = "block";
             results.classList.add("wingdings");
             body.background = "none";
@@ -260,11 +260,8 @@ function displayCustomPage(personality) {
             console.log(userLabels[7]);
             break;
 
-
         default:
             document.getElementById("error").style.display = "block";
 
     }
 }
-
-

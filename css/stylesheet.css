@@ -234,11 +234,11 @@ h2{
   /* Side Nav Styling */
   /* The sidebar menu */
 .sidenav {
-    height: 100%; 
-    width: 160px;
+    height: 100%;
+    width: 20%;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 60px; /* Stay at the top */
+    /*z-index: 1; !* Stay on top *!*/
+    /*top: 60px; !* Stay at the top *!*/
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
     /*padding-top: 16px;*/
@@ -263,7 +263,7 @@ color: #eb5e28;
 }
 /* Style page content */
 .main {
-margin-left: 180px;
+margin-left: 20%;
 padding: 0px 10px;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
