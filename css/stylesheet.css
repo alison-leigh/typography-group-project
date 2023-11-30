@@ -1,103 +1,123 @@
-body, html{
+body, html {
     background-color: floralwhite;
     /* Body Text Font*/
     font-family: 'Montserrat', 'Open Sans', 'Sans Serif';
 }
+
 /* Start of Nav Bar Styling */
 nav {
     background-color: #252422;
 }
-#greeter{
-    color:#EB5E28;
+
+#greeter {
+    color: #EB5E28;
 }
+
 .nav-link {
     color: #eb5e28;
 }
+
 .navbar-brand {
     color: #eb5e28;
 }
+
 /* Nav Bar Hover Styling*/
 .nav-link:hover {
     color: floralwhite;
 }
+
 .navbar-brand:hover {
     color: floralwhite;
 }
+
 /* Nav Bar Visited Link Styling*/
 .nav-link:visited {
     color: #eb5e28;
 }
+
 .navbar-brand:visited {
     color: #eb5e28;
 }
+
 /* Important! Make sure to put this class on the current page's nav-link in Nav Bar*/
-.currentPage{
+.currentPage {
     color: floralwhite !important;
 }
+
 /* Start of Content Styling */
-h2{
+h2 {
     color: #EB5E28;
     font-family: 'PT Serif', Serif;
     font-size: 2em;
     padding: 4px;
 }
+
 /* General Container/Div Styling*/
 .sectionStyle {
     background-color: floralwhite;
     margin: 0px;
     padding: 32px 8px 32px 8px;
-    color:#252422;
+    color: #252422;
 }
+
 /* to remove once header restyling is complete!!!!*/
-.sectionStyle h3{
+.sectionStyle h3 {
     color: #EB5E28;
     font-family: 'PT Serif', Serif;
     font-size: 2em;
     padding: 4px;
 }
-.sectionStyle a{
+
+.sectionStyle a {
     color: #EB5E28;
     text-decoration: underline;
     font-family: 'PT Serif', Serif;
     padding: 4px;
 }
-.sectionStyle h5{
+
+.sectionStyle h5 {
     font-size: 1.25em;
     padding: 4px;
     font-weight: bold;
 }
-.sectionStyle p{
-    height:auto;
+
+.sectionStyle p {
+    height: auto;
     font-size: 1.2em;
     text-align: left;
     padding: 4px;
 }
+
 /* About Us Page Styling*/
-#aboutUsSubTitle{
+#aboutUsSubTitle {
     color: black;
     font-family: 'PT Serif', Serif;
 }
-.teamContainer{
+
+.teamContainer {
     border: 2px solid floralwhite;
     border-radius: 16px;
     max-width: 400px;
 }
-.teamContainer img{
-    display:block;
+
+.teamContainer img {
+    display: block;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
-.teamContainer:hover{
+
+.teamContainer:hover {
     box-shadow: 5px 10px 8px #ccc5b9;
     transition: 0.3ms;
     border: 1px solid #ccc5b9;
 }
-.vl{
+
+.vl {
     border-left: 2px solid #EB5E28;
     height: auto;
     margin: 50px 0px 50px 0px;
-    
+
 }
 
 /* End of About Us Page Styling */
@@ -110,10 +130,10 @@ h2{
     margin: 0 auto;
     background-color: #ccc5b9;
     border-radius: 12px;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -122,19 +142,19 @@ h2{
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .tlContainer {
+}
+
+/* Container around content */
+.tlContainer {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
     border-radius: 12px;
-  }
-  
-  /* The circles on the timeline */
-  .tlContainer::after {
+}
+
+/* The circles on the timeline */
+.tlContainer::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -145,20 +165,20 @@ h2{
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+}
+
+/* Place the container to the left */
+.left {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+/* Place the container to the right */
+.right {
     left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -169,10 +189,10 @@ h2{
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -183,59 +203,60 @@ h2{
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
     left: -13px;
-  }
-  
-  /* The actual content */
-  .content {
+}
+
+/* The actual content */
+.content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
     /* Place the timelime to the left */
     .timeline::after {
-    left: 31px;
+        left: 31px;
     }
-    
+
     /* Full-width containers */
     .tlContainer {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
     }
-    
+
     /* Make sure that all arrows are pointing leftwards */
     .tlContainer::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
     }
-  
+
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-    left: 15px;
+        left: 15px;
     }
-    
+
     /* Make all right containers behave like the left ones */
     .right {
-    left: 0%;
+        left: 0%;
     }
-  }
-  /* End of Timeline Page Styling */
+}
 
-  /* Start of Past Page Styling*/
+/* End of Timeline Page Styling */
 
-  /* Side Nav Styling */
-  /* The sidebar menu */
+/* Start of Past Page Styling*/
+
+/* Side Nav Styling */
+/* The sidebar menu */
 .sidenav {
     height: 100%;
     width: 20%;
@@ -247,56 +268,79 @@ h2{
     /*padding-top: 16px;*/
 
     transition: top .24s ease-in-out; /* makes the scrolling animation smoother when that js code hits it */
-  }
-.sidenavHeader{
+}
+
+.sidenavHeader {
     margin: 8px;
     font-size: 1.35em;
 }
+
 /* The navigation menu links */
 .sidenav a {
-padding: 8px 8px 8px 16px;
-text-decoration: none;
-font-size: 1.2em;
-color: #252422;
-display: block;
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #252422;
+    display: block;
 }
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-color: #eb5e28;
+    color: #eb5e28;
 }
+
 /* Style page content */
 .main {
-margin-left: 20%;
-padding: 0px 10px;
+    margin-left: 20%;
+    padding: 0px 10px;
 }
+
+.main h1 {
+    padding-top: .5em;
+}
+
+h1 {
+    font-family: 'PT Serif', Serif;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 1em;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 1em;
+    }
 }
-.infoContainer{
-    float:left;
+
+.infoContainer {
+    float: left;
     height: auto;
     clear: left;
 }
-.infoContainer p{
-    width:auto;
+
+.infoContainer p {
+    width: auto;
     font-size: 1.25em;
     padding: 6px;
-    margin-left: 6px; 
+    margin-left: 6px;
 }
+
 /* Centering Figure/Image (Not Working :( )*/
-figure{
+figure {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
 /* Orange horizontal line (hl) */
-.hl{
+.hl {
     clear: both;
     border-bottom: 2px solid #EB5E28;
     width: auto;
     margin: 40px 120px 40px 120px;
 }
+
 /* End of Past Page Styling*/
 
 /* hi i moved your media query down here so it overwrites the other stuff
@@ -305,17 +349,18 @@ this is for the History pages' styling*/
 
 /* Causes the middle vertical line (vl) to disappear for small screens*/
 @media (max-width: 767.98px) {
-    .displayNone{ /* Causes the middle vertical line (vl) to disappear for small screens*/
-        display:none;
+    .displayNone { /* Causes the middle vertical line (vl) to disappear for small screens*/
+        display: none;
     }
-    .main{
+
+    .main {
         margin-left: 2em;
     }
 }
 
 /* Overwriting bootstrap the lazy way. If this messes something up, tell Alison. */
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: white;
 }
 
@@ -324,14 +369,14 @@ this is for the History pages' styling*/
 }
 
 /* no colors anymore, i want them to turn black~ (overwrites bootstrap's primary button color) */
-.btn-primary{
+.btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #000;
     --bs-btn-border-color: #EB5E28;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #181818;
     --bs-btn-hover-border-color: #EB5E28;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #181818;
     --bs-btn-active-border-color: #EB5E28;
