@@ -94,7 +94,7 @@ h2{
 }
 /* Causes the middle vertical line (vl) to disappear for small screens*/
 @media (max-width: 767.98px) {
-    #displayNone{
+    .displayNone{
         display:none;
     }
  }
