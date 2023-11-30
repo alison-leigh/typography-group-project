@@ -36,8 +36,10 @@ nav {
 }
 /* Start of Content Styling */
 h2{
-    color: black;
+    color: #EB5E28;
     font-family: 'PT Serif', Serif;
+    font-size: 2em;
+    padding: 4px;
 }
 /* General Container/Div Styling*/
 .sectionStyle {
@@ -46,6 +48,7 @@ h2{
     padding: 32px 8px 32px 8px;
     color:#252422;
 }
+/* to remove once header restyling is complete!!!!*/
 .sectionStyle h3{
     color: #EB5E28;
     font-family: 'PT Serif', Serif;
@@ -70,6 +73,10 @@ h2{
     padding: 4px;
 }
 /* About Us Page Styling*/
+#aboutUsSubTitle{
+    color: black;
+    font-family: 'PT Serif', Serif;
+}
 .teamContainer{
     border: 2px solid floralwhite;
     border-radius: 16px;
@@ -77,6 +84,7 @@ h2{
 }
 .teamContainer img{
     display:block;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -93,7 +101,7 @@ h2{
 }
 /* Causes the middle vertical line (vl) to disappear for small screens*/
 @media (max-width: 767.98px) {
-    #displayNone{
+    .displayNone{
         display:none;
     }
  }
