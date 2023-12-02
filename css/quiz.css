@@ -86,6 +86,10 @@
   font-family: "Times New Roman", serif;
 }
 
+.comicSans #topScore, .comicSans #resultsImage, .comicSans #resultsDescription {
+  font-family: "Comic Sans MS", sans-serif;
+}
+
 .ubuntu #topScore, .ubuntu #resultsImage, .ubuntu #resultsDescription {
   font-family: "Ubuntu", sans-serif;
 }

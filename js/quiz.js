@@ -223,7 +223,8 @@ function displayCustomPage(personality) {
             results.classList.add("comicSans");
             body.background = "none";
             printResult.innerText = userLabels[1];
-            body.backgroundColor = "#303030";
+            body.background = "url('img/spiral.png') no-repeat";
+            body.backgroundSize = "cover";
             body.color = "white";
             resultsImage.innerHTML = `<img src='img/clown.jpg' alt="">`;
             resultsDescription.innerText = `You're funny and approachable, but people have a hard time taking you seriously. You're not to everyone's tastes, but the people who really Get You also adore you.`
