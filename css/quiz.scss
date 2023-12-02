@@ -15,12 +15,10 @@
   #resultsDescription{
     text-align: left;
   }
-}
-#results h1 {
-  text-align: center;
-}
-#results p {
-  text-align: center;
+
+  img {
+    max-width: 500px;
+  }
 }
 
 #error {
@@ -114,11 +112,30 @@
   }
 }
 
-// wingodingois
-.wingding {
+.helvetica{
+  #topScore, #resultsImage, #resultsDescription {
+    font-family: Helvetica, sans-serif;
+  }
+  #resultsInfoContainer{
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.arial{
+  #topScore, #resultsImage, #resultsDescription {
+    font-family: Arial, sans-serif;
+  }
+  #resultsInfoContainer{
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* for the wingding span in the quiz */
+.wingdingSpan {
   font-family: Wingdings, "Wingdings 2", "Wingdings 3";
 }
 
+/* for the wingdings result page styling */
 .wingdings{
   #topScore, #resultsImage, #resultsDescription {
     font-family: Wingdings, "Wingdings 2", "Wingdings 3";

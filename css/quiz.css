@@ -14,13 +14,8 @@
 #results #resultsDescription {
   text-align: left;
 }
-
-#results h1 {
-  text-align: center;
-}
-
-#results p {
-  text-align: center;
+#results img {
+  max-width: 500px;
 }
 
 #error {
@@ -99,10 +94,26 @@
   font-family: "Lobster", sans-serif;
 }
 
-.wingding {
+.helvetica #topScore, .helvetica #resultsImage, .helvetica #resultsDescription {
+  font-family: Helvetica, sans-serif;
+}
+.helvetica #resultsInfoContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.arial #topScore, .arial #resultsImage, .arial #resultsDescription {
+  font-family: Arial, sans-serif;
+}
+.arial #resultsInfoContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* for the wingding span in the quiz */
+.wingdingSpan {
   font-family: Wingdings, "Wingdings 2", "Wingdings 3";
 }
 
+/* for the wingdings result page styling */
 .wingdings #topScore, .wingdings #resultsImage, .wingdings #resultsDescription {
   font-family: Wingdings, "Wingdings 2", "Wingdings 3";
 }

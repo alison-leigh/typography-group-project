@@ -35,12 +35,12 @@ const questionText =	[
 // each question should have the same amount of possible answers for math reasons (scroll down to var answerValues below)
 
 const answerText =	[
-    /* Q1 Options */ [ "Peacock", "Crunchyroll", "ESPN", "I don't use streaming services.", "Netflix", `<span class="wingding">Im not picky</span>`],
-    /* Q2 Options */ [ "Some sort of physical activity. I like to stay active.", "Reading a book.", "Taking pics or filming fun videos to post on my socials.", "Taking it easy. Maybe gaming, maybe catching up on sleep.", "Horseback riding.", "<span class=\"wingding\">Just lil Wingding Thangs</span>"],
-    /* Q3 Options */ [ "Oxfords or kitten heels.", "Crocs! They're comfy and easy to wear!", "Uggs. They're SO cozy and they're back in style.", "Nothing beats a well-made pair of boots.", "My Chucks.", "<span class=\"wingding\">I dont have feet or maybe I do!</span>"],
-    /* Q4 Options */ [ "Portand", "Vermont in the fall", "Nashville", "Tokyo", "Panama City Beach" ,"<span class=\"wingding\">Anywhere</span>"],
-    /* Q5 Options */ [ "Martini", "Monster Energy", "A cold one", "Cold Drip Coffee","PSL", "<span class=\"wingding\">A creature like me does not yearn for sustenance</span>"],
-    /* Q6 Options */ [ "Facebook", "Pinterest", "Discord", "Twitter/X", "Tiktok", "<span class=\"wingding\">icons8</span>"],
+    /* Q1 Options */ [ "Peacock", "Crunchyroll", "ESPN", "I don't use streaming services.", "Netflix", `\u{270B}\u{FE0E}\u{274D}\u{FE0E} \u{25A0}\u{FE0E}\u{25A1}\u{FE0E}\u{29EB}\u{FE0E} \u{25FB}\u{FE0E}\u{2653}\u{FE0E}\u{264D}\u{FE0E}\u{1F675}\u{2353}\u{FE0E}`],
+    /* Q2 Options */ [ "Some sort of physical activity. I like to stay active.", "Reading a book.", "Taking pics or filming fun videos to post on my socials.", "Taking it easy. Maybe gaming, maybe catching up on sleep.", "Horseback riding.", "\u{1F44E}\u{FE0E}\u{2752}\u{FE0E}\u{264B}\u{FE0E}\u{2B25}\u{FE0E}\u{2653}\u{FE0E}\u{25A0}\u{FE0E}\u{2651}\u{FE0E}\u{25CF}\u{FE0E}\u{2653}\u{FE0E}\u{29EB}\u{FE0E}\u{29EB}\u{FE0E}\u{25CF}\u{FE0E}\u{264F}\u{FE0E} \u{2653}\u{FE0E}\u{264D}\u{FE0E}\u{25A1}\u{FE0E}\u{25A0}\u{FE0E}\u{2B27}\u{FE0E}︎"],
+    /* Q3 Options */ [ "Oxfords or kitten heels.", "Crocs! They're comfy and easy to wear!", "Uggs. They're SO cozy and they're back in style.", "Nothing beats a well-made pair of boots.", "My Chucks.", "\u{270B}\u{FE0E}\u{274D}\u{FE0E} \u{25A0}\u{FE0E}\u{25A1}\u{FE0E}\u{29EB}\u{FE0E} \u{25FB}\u{FE0E}\u{2653}\u{FE0E}\u{264D}\u{FE0E}\u{1F675}\u{2353}\u{FE0E}"],
+    /* Q4 Options */ [ "Portand", "Vermont in the fall", "Nashville", "Tokyo", "Panama City Beach" ,"\u{270B}\u{FE0E} \u{2B25}\u{FE0E}\u{264B}\u{FE0E}\u{25A0}\u{FE0E}\u{29EB}\u{FE0E} \u{29EB}\u{FE0E}\u{25A1}\u{FE0E} \u{2B27}\u{FE0E}\u{29EB}\u{FE0E}\u{264B}\u{FE0E}\u{2353}\u{FE0E} \u{2652}\u{FE0E}\u{25A1}\u{FE0E}\u{274D}\u{FE0E}\u{264F}\u{FE0E}"],
+    /* Q5 Options */ [ "Martini", "Monster Energy", "A cold one", "Cold Drip Coffee","PSL", "\u{270C}\u{FE0E} \u{264D}\u{FE0E}\u{2752}\u{FE0E}\u{264F}\u{FE0E}\u{264B}\u{FE0E}\u{29EB}\u{FE0E}\u{25C6}\u{FE0E}\u{2752}\u{FE0E}\u{264F}\u{FE0E} \u{25CF}\u{FE0E}\u{2653}\u{FE0E}\u{1F675}\u{264F}\u{FE0E} \u{274D}\u{FE0E}\u{264F}\u{FE0E} \u{264E}\u{FE0E}\u{25A1}\u{FE0E}\u{264F}\u{FE0E}\u{2B27}\u{FE0E} \u{25A0}\u{FE0E}\u{25A1}\u{FE0E}\u{29EB}\u{FE0E} \u{2353}\u{FE0E}\u{264F}\u{FE0E}\u{264B}\u{FE0E}\u{2752}\u{FE0E}\u{25A0}\u{FE0E} \u{2650}\u{FE0E}\u{25A1}\u{FE0E}\u{2752}\u{FE0E} \u{2B27}\u{FE0E}\u{25C6}\u{FE0E}\u{2B27}\u{FE0E}\u{29EB}\u{FE0E}\u{264F}\u{FE0E}\u{25A0}\u{FE0E}\u{264B}\u{FE0E}\u{25A0}\u{FE0E}\u{264D}\u{FE0E}\u{264F}\u{FE0E}"],
+    /* Q6 Options */ [ "Facebook", "Pinterest", "Discord", "Twitter/X", "Tiktok", "\u{2653}\u{FE0E}\u{264D}\u{FE0E}\u{25A1}\u{FE0E}\u{25A0}\u{FE0E}\u{2B27}\u{FE0E}\u{1F5B0}\u{FE0E}"],
 ]
 
 
@@ -61,7 +61,7 @@ const answerValues =	[		//question 1 answer values
     /* Q#2 */    [
         [0 /*tnr*/,0 /*cs*/,5 /*lob*/,0 /*ub*/,3 /*ha*/,0 /*hel*/,2 /*ari*/,0 /*wing*/], // Physical Activity
         [4 /*tnr*/,0 /*cs*/,0 /*lob*/,3 /*ub*/,0 /*ha*/,5 /*hel*/,0 /*ari*/,0 /*wing*/], // Reading a book
-        [0 /*tnr*/,4 /*cs*/,3 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,5 /*ari*/,0 /*wing*/], // Content creation
+        [0 /*tnr*/,4 /*cs*/,3 /*lob*/,0 /*ub*/,0 /*ha*/,3 /*hel*/,5 /*ari*/,0 /*wing*/], // Content creation
         [0 /*tnr*/,4 /*cs*/,0 /*lob*/,5 /*ub*/,0 /*ha*/,3 /*hel*/,0 /*ari*/,0 /*wing*/], // Catching up on sleep
         [4 /*tnr*/,0 /*cs*/,0 /*lob*/,0 /*ub*/,5 /*ha*/,0 /*hel*/,1 /*ari*/,0 /*wing*/], // Horseback Riding
         [0 /*tnr*/,3 /*cs*/,0 /*lob*/,0 /*ub*/,0 /*ha*/,0 /*hel*/,0 /*ari*/,5 /*wing*/] // wingodingos
@@ -214,7 +214,7 @@ function displayCustomPage(personality) {
             body.backgroundColor = "#303030";
             body.color = "white";
             resultsImage.innerHTML = `<img src='/img/casablanca.jpg' alt="Black and white photo of Humohrey Bogart and Ingrid Bergman toasting with drinks.">`;
-            resultsDescription.innerText = `You're classic and old fashioned.`
+            resultsDescription.innerHTML = `<p>You're classic and old fashioned. Some might call you stuffy and maybe even a little boring, but <i>those</i> people can't even put their phone down at the dinner table.</p>`
             console.log(userLabels[0]);
             break;
 
@@ -225,8 +225,8 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[1];
             body.backgroundColor = "#303030";
             body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
-            resultsDescription.innerText = ``
+            resultsImage.innerHTML = `<img src='/img/clown.jpg' alt="">`;
+            resultsDescription.innerText = `You're funny and approachable, but people have a hard time taking you seriously. You're not to everyone's tastes, but the people who really Get You also adore you.`
             console.log(userLabels[1]);
             break;
 
@@ -252,7 +252,7 @@ function displayCustomPage(personality) {
             body.backgroundColor = "#000000";
             body.color = "white";
             resultsImage.innerHTML = `<img src='/img/futaba.png' alt="Futaba from Persona 5">`;
-            resultsDescription.innerText = `You're a geek, but you already knew that. You can appreciate Ubuntu as an open source operating system even if you don't use it yourself. Try drinking water and standing up to stretch from time to time.`
+            resultsDescription.innerText = `You're a geek, but you already knew that. You can appreciate Ubuntu as an open source operating system even if you don't use it yourself. Try drinking water and stretching from time to time.`
             console.log(userLabels[3]);
             break;
         case 4:		// Homemade Apple
@@ -263,7 +263,7 @@ function displayCustomPage(personality) {
             body.backgroundSize = "cover";
             pageTitle.style.color = "white";
             resultsImage.innerHTML = `<img src='/img/dolly.jpg' alt="Dolly Parton adjusting her cowboy hat.">`;
-            resultsDescription.innerHTML = `<p>Yer a lil bit country, ain'tcha? Or maybe more Farmhouse Chic.</p> <p>You're not afraid of hard work, but you know how to enjoy the fruits of your labor.</p>`
+            resultsDescription.innerHTML = `<p>Yer a lil bit country, ain'tcha? Or maybe more Farmhouse Chic.</p> <p>You're not afraid of hard work, but you know how to enjoy the fruits of your labor. Some people find you hard to understand.</p>`
             console.log(userLabels[4]);
             break;
         case 5: // Helvetica
@@ -271,10 +271,11 @@ function displayCustomPage(personality) {
             results.classList.add("helvetica");
             body.background = "none";
             printResult.innerText = userLabels[5];
-            body.backgroundColor = "#303030";
-            body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
-            resultsDescription.innerText = `What other result did you expect? You're strange and a little offputting. Just the way you like it.`
+            body.background = "url('/img/img.png') repeat";
+            pageTitle.style.color = "white";
+            pageTitle.style.textShadow = "1px 1px #000000";
+            resultsImage.innerHTML = `<img src='/img/helvetica.jpeg' alt="City photo with a vintage filter, overlayed with the caption: Pick a bad photo, apply a vintage effect and write something in Helvetica.">`;
+            resultsDescription.innerText = `You don't keep up with the trends. You're Unique and Different. Sometimes people can't tell you apart from Arial, though.`
             console.log(userLabels[5]);
             break;
         case 6: // Arial
@@ -282,10 +283,10 @@ function displayCustomPage(personality) {
             results.classList.add("arial");
             body.background = "none";
             printResult.innerText = userLabels[6];
-            body.backgroundColor = "#303030";
-            body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
-            resultsDescription.innerText = `What other result did you expect? You're strange and a little offputting. Just the way you like it.`
+            body.background = "url('/img/img.png') repeat";
+            pageTitle.style.textShadow = "1px 1px #000000";
+            resultsImage.innerHTML = `<img src='/img/christiangirlautumn.jpg' alt="Fall-fashion-forward woman (known from Christian Girl Autumn meme) poses in front of a pumpkin patch while holding a pumpkin spice latte.">`;
+            resultsDescription.innerText = `You like to keep up with the trends. It makes you seem pretty basic on the surface, but you don't care. You're having a good time! Are you an influencer or just following their lead?`
             console.log(userLabels[6]);
             break;
         case 7: // Wingdings
@@ -294,8 +295,8 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[7];
             body.backgroundColor = "#303030";
             body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
-            resultsDescription.innerText = `What other result did you expect? You're strange and a little offputting. Just the way you like it.`
+            resultsImage.innerHTML = `<img src='/img/jughead.gif' alt="In case you haven't noticed, I'm weird.  I'm a weirdo. I don't fit in and I don't want to fit in.">`;
+            resultsDescription.innerText = `You're strange and a little offputting, just the way you like it. You don't render in a lot of browsers and web guides say to replace you with Unicode, but that's because they just don't Get you.`
             console.log(userLabels[7]);
             break;
 
