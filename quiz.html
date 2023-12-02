@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/quiz.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/greeter.js"></script>
 
@@ -63,7 +63,7 @@
     </nav>
 </section>
 
-<h1 class="m-3 mt-4 fs-1 text-center position-relative">What font are you?</h1>
+<h1 class="m-3 mt-4 fs-1 text-center position-relative" id="title">What font are you?</h1>
 <noscript><p class="text-center fw-bold text-danger">Please enable Javascript if you want to discover which font you are.</p></noscript>
 <div id="quizContainer" class="position-relative">
     <div id="quiz" class="container-sm form-check">
@@ -73,19 +73,33 @@
             rediscover myself.
         </button>
     </div>
-    <div id="results">
-        <h1>Results</h1>
-        <p>You are <span id="topScore"></span></p>
-        <canvas id="resultsChart"></canvas>
-<!--        <div style="clear:both;"></div>-->
-        <p>
-            <button type="button" class="btn btn-primary" onclick="location.reload()">Try again?</button>
-        </p>
+    <div id="results" class="text-center">
+        <div id="resultsInfoContainer">
+            <p class="h2">You are...</p>
+            <span id="topScore" class="h1"></span>
+            <div id="resultsImage" class="m-3"></div>
+            <div id="resultsDescription" class="h3 container-sm mt-4 mb-4"></div>
+            <p>
+                <button type="button" class="btn btn-primary" onclick="location.reload()">Try again?</button>
+            </p>
+            <p>These are other fonts you share traits with...</p>
+            <div id="chartContainer" class="d-flex justify-content-center">
+                <canvas id="resultsChart"></canvas>
+            </div>
+        </div>
     </div>
     <div id="error">Uh oh! Something went wrong. Refresh the page and try again.</div>
 </div>
-
-
+<script>
+    // enables user to press the enter key to progress the quiz
+    $(document).ready(function(){
+        $(document).on("keypress",(function(event){
+            if (event.which === 13) {
+                $('#startButton').click();
+            }
+        }));
+    });
+</script>
 <script src="js/quiz.js"></script>
 <script src="js/chart.js"></script>
 </body>

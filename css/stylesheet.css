@@ -1,4 +1,8 @@
-body, html {
+body, html{
+    min-height: 100%;
+}
+
+body {
     background-color: floralwhite;
     /* Body Text Font*/
     font-family: 'Montserrat', 'Open Sans', 'Sans Serif';

@@ -8,15 +8,31 @@
 #results p {
   text-align: center;
 }
+#results button {
+  transform: scale(1.5);
+}
+#results #resultsDescription {
+  text-align: left;
+}
+
+#results h1 {
+  text-align: center;
+}
+
+#results p {
+  text-align: center;
+}
 
 #error {
   display: none;
 }
 
 #resultsChart {
-  display: inline-block;
-  max-width: 500px;
-  max-height: 500px;
+  min-width: 500px;
+  min-height: 300px;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 50px;
 }
 
 #quiz {
@@ -47,12 +63,55 @@
   border-color: #EB5E28;
 }
 
-.apple #topScore {
-  font-family: Home;
+.apple #topScore, .apple #resultsImage, .apple #resultsDescription {
+  font-family: "Homemade Apple", cursive;
+  color: #75000d;
+}
+.apple .btn-primary {
+  --bs-btn-color: #181818;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #EB5E28;
+  --bs-btn-hover-color: #181818;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #EB5E28;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #181818;
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #EB5E28;
+  --bs-btn-active-shadow: inset 0 3px 5px rgb(178, 178, 178);
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: #ccc;
+  --bs-btn-disabled-border-color: #ccc;
+}
+.apple #resultsInfoContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tnr #topScore, .tnr #resultsImage, .tnr #resultsDescription {
+  font-family: "Times New Roman", serif;
+}
+
+.ubuntu #topScore, .ubuntu #resultsImage, .ubuntu #resultsDescription {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.lobster #topScore, .lobster #resultsImage, .lobster #resultsDescription {
+  font-family: "Lobster", sans-serif;
 }
 
 .wingding {
   font-family: Wingdings, "Wingdings 2", "Wingdings 3";
+}
+
+.wingdings #topScore, .wingdings #resultsImage, .wingdings #resultsDescription {
+  font-family: Wingdings, "Wingdings 2", "Wingdings 3";
+}
+
+#resultsInfoContainer {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 2em;
+  min-width: 500px;
 }
 
 /*# sourceMappingURL=quiz.css.map */

@@ -106,6 +106,11 @@ const quiz = document.getElementById("quiz");
 const body = document.body.style;
 const printResult = document.getElementById("topScore");
 const buttonElement = document.getElementById("startButton");
+const resultsImage = document.getElementById("resultsImage");
+const resultsDescription = document.getElementById("resultsDescription");
+const resultsInfoContainer = document.getElementById("resultsInfoContainer");
+const pageTitle = document.getElementById("title");
+
 
 
 function changeState() {
@@ -134,13 +139,13 @@ function initText(question) {
 
         answerSelection += "<li class='quizAnswer'><input class='form-check-input' type='radio' name='question" +
             (question+1) + "' onClick='setAnswer("+i+")' id='" + answerText[question][i] + "'><label class='form-check-label' for='" + answerText[question][i] + "'>" + answerText[question][i] + "</label></li>";
-
         // makes the li item click-to-select instead. pita to change the code to implement it, but it would be neat if i have the time
         // answerSelection += "<li class='quizAnswer' onClick='setAnswer("+i+")>" + answerText[question][i] + "</li>";
     }
 
     document.getElementById("question").innerHTML = questionText[question];	// sets questions' text
     document.getElementById("answer").innerHTML = answerSelection;		// sets answers' text
+
 }
 
 function setAnswer(input) {
@@ -148,6 +153,7 @@ function setAnswer(input) {
     clearTempStats();
 
     tempStats = answerValues[questionNumber-1][input];
+    // if there are still quiz questions left...
     if (questionNumber < questionText.length) {
 
         buttonElement.innerHTML = "Continue";
@@ -205,6 +211,10 @@ function displayCustomPage(personality) {
             results.classList.add("tnr");
             body.background = "none";
             printResult.innerText = userLabels[0];
+            body.backgroundColor = "#303030";
+            body.color = "white";
+            resultsImage.innerHTML = `<img src='/img/casablanca.jpg' alt="Black and white photo of Humohrey Bogart and Ingrid Bergman toasting with drinks.">`;
+            resultsDescription.innerText = `You're classic and old fashioned.`
             console.log(userLabels[0]);
             break;
 
@@ -213,6 +223,10 @@ function displayCustomPage(personality) {
             results.classList.add("comicSans");
             body.background = "none";
             printResult.innerText = userLabels[1];
+            body.backgroundColor = "#303030";
+            body.color = "white";
+            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
+            resultsDescription.innerText = ``
             console.log(userLabels[1]);
             break;
 
@@ -221,6 +235,12 @@ function displayCustomPage(personality) {
             results.classList.add("lobster");
             body.background = "none";
             printResult.innerText = userLabels[2];
+            body.background = "rgb(117,220,201)";
+            body.background = "linear-gradient(180deg, rgba(117,220,201,1) 17%, rgba(35,116,223,1) 100%)";
+            body.color = "white";
+            body.textShadow = "1px 1px black"
+            resultsImage.innerHTML = `<img src='/img/larry.png' alt="Larry the Lobster from Spongebob">`;
+            resultsDescription.innerText = `You're a jock. You like to stay active and work on your gains. You've known the stink of a dirty protein shaker bottle and it's humbled you.`
             console.log(userLabels[2]);
             break;
 
@@ -229,13 +249,21 @@ function displayCustomPage(personality) {
             results.classList.add("ubuntu");
             body.background = "none";
             printResult.innerText = userLabels[3];
+            body.backgroundColor = "#000000";
+            body.color = "white";
+            resultsImage.innerHTML = `<img src='/img/futaba.png' alt="Futaba from Persona 5">`;
+            resultsDescription.innerText = `You're a geek, but you already knew that. You can appreciate Ubuntu as an open source operating system even if you don't use it yourself. Try drinking water and standing up to stretch from time to time.`
             console.log(userLabels[3]);
             break;
         case 4:		// Homemade Apple
             results.style.display = "block";
             results.classList.add("apple");
-            body.background = "pink";
             printResult.innerText = userLabels[4];
+            body.background = "url('https://i.imgur.com/Lt1HywU.jpg')";
+            body.backgroundSize = "cover";
+            pageTitle.style.color = "white";
+            resultsImage.innerHTML = `<img src='/img/dolly.jpg' alt="Dolly Parton adjusting her cowboy hat.">`;
+            resultsDescription.innerHTML = `<p>Yer a lil bit country, ain'tcha? Or maybe more Farmhouse Chic.</p> <p>You're not afraid of hard work, but you know how to enjoy the fruits of your labor.</p>`
             console.log(userLabels[4]);
             break;
         case 5: // Helvetica
@@ -243,6 +271,10 @@ function displayCustomPage(personality) {
             results.classList.add("helvetica");
             body.background = "none";
             printResult.innerText = userLabels[5];
+            body.backgroundColor = "#303030";
+            body.color = "white";
+            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
+            resultsDescription.innerText = `What other result did you expect? You're strange and a little offputting. Just the way you like it.`
             console.log(userLabels[5]);
             break;
         case 6: // Arial
@@ -250,13 +282,20 @@ function displayCustomPage(personality) {
             results.classList.add("arial");
             body.background = "none";
             printResult.innerText = userLabels[6];
+            body.backgroundColor = "#303030";
+            body.color = "white";
+            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
+            resultsDescription.innerText = `What other result did you expect? You're strange and a little offputting. Just the way you like it.`
             console.log(userLabels[6]);
             break;
         case 7: // Wingdings
             results.style.display = "block";
             results.classList.add("wingdings");
-            body.background = "none";
             printResult.innerText = userLabels[7];
+            body.backgroundColor = "#303030";
+            body.color = "white";
+            resultsImage.innerHTML = `<img src='/img/DoodleBob.png' alt="">`;
+            resultsDescription.innerText = `What other result did you expect? You're strange and a little offputting. Just the way you like it.`
             console.log(userLabels[7]);
             break;
 

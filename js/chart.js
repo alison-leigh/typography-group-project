@@ -6,15 +6,12 @@ function displayResultsChart() {
             labels: userLabels,
             datasets: [{
                 label: 'Your Personality Rankings',
-                data: userStats
+                data: userStats,
+                borderWidth: 2,
             }]
         },
         options: {
-            scales: {
-                x: {
-                    beginAtZero: true
-                }
-            }
+            indexAxis: 'y',
         }
     });
 }

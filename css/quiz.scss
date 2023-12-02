@@ -1,0 +1,133 @@
+#results {
+  display: none;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    transform: scale(1.5);
+  }
+
+  #resultsDescription{
+    text-align: left;
+  }
+}
+#results h1 {
+  text-align: center;
+}
+#results p {
+  text-align: center;
+}
+
+#error {
+  display: none;
+}
+
+#resultsChart {
+  min-width: 500px;
+  min-height: 300px;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 50px;
+}
+
+#quiz {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin: 1em 0;
+    padding: 1em;
+  }
+
+  input[type=radio] {
+    padding: 0.5em;
+  }
+
+  #question {
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .form-check-input {
+    border: 1px solid #000;
+  }
+
+  .form-check-input:checked {
+    background-color: #EB5E28;
+    border-color: #EB5E28;
+  }
+}
+
+.apple{
+  #topScore, #resultsImage, #resultsDescription {
+    font-family: 'Homemade Apple', cursive;
+    color: #75000d;
+  }
+
+  .btn-primary{
+    --bs-btn-color: #181818;
+    --bs-btn-bg: #ffffff;
+    --bs-btn-border-color: #EB5E28;
+    --bs-btn-hover-color: #181818;
+    --bs-btn-hover-bg: #ffffff;
+    --bs-btn-hover-border-color: #EB5E28;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #181818;
+    --bs-btn-active-bg: #ffffff;
+    --bs-btn-active-border-color: #EB5E28;
+    --bs-btn-active-shadow: inset 0 3px 5px rgb(178, 178, 178);
+    --bs-btn-disabled-color: #ffffff;
+    --bs-btn-disabled-bg: #ccc;
+    --bs-btn-disabled-border-color: #ccc;
+  }
+
+  #resultsInfoContainer{
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.tnr{
+  #topScore, #resultsImage, #resultsDescription {
+    font-family: "Times New Roman", serif;
+  }
+}
+
+.ubuntu{
+  #topScore, #resultsImage, #resultsDescription {
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+.lobster{
+  #topScore, #resultsImage, #resultsDescription {
+    font-family: 'Lobster', sans-serif;
+  }
+}
+
+// wingodingois
+.wingding {
+  font-family: Wingdings, "Wingdings 2", "Wingdings 3";
+}
+
+.wingdings{
+  #topScore, #resultsImage, #resultsDescription {
+    font-family: Wingdings, "Wingdings 2", "Wingdings 3";
+  }
+}
+
+#resultsInfoContainer{
+  display: inline-block;
+  border-radius: 100px;
+  padding: 2em;
+  min-width: 500px;
+}
