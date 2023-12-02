@@ -213,7 +213,7 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[0];
             body.backgroundColor = "#303030";
             body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/casablanca.jpg' alt="Black and white photo of Humohrey Bogart and Ingrid Bergman toasting with drinks.">`;
+            resultsImage.innerHTML = `<img src='img/casablanca.jpg' alt="Black and white photo of Humohrey Bogart and Ingrid Bergman toasting with drinks.">`;
             resultsDescription.innerHTML = `<p>You're classic and old fashioned. Some might call you stuffy and maybe even a little boring, but <i>those</i> people can't even put their phone down at the dinner table.</p>`
             console.log(userLabels[0]);
             break;
@@ -225,7 +225,7 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[1];
             body.backgroundColor = "#303030";
             body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/clown.jpg' alt="">`;
+            resultsImage.innerHTML = `<img src='img/clown.jpg' alt="">`;
             resultsDescription.innerText = `You're funny and approachable, but people have a hard time taking you seriously. You're not to everyone's tastes, but the people who really Get You also adore you.`
             console.log(userLabels[1]);
             break;
@@ -239,7 +239,7 @@ function displayCustomPage(personality) {
             body.background = "linear-gradient(180deg, rgba(117,220,201,1) 17%, rgba(35,116,223,1) 100%)";
             body.color = "white";
             body.textShadow = "1px 1px black"
-            resultsImage.innerHTML = `<img src='/img/larry.png' alt="Larry the Lobster from Spongebob">`;
+            resultsImage.innerHTML = `<img src='img/larry.png' alt="Larry the Lobster from Spongebob">`;
             resultsDescription.innerText = `You're a jock. You like to stay active and work on your gains. You've known the stink of a dirty protein shaker bottle and it's humbled you.`
             console.log(userLabels[2]);
             break;
@@ -251,7 +251,7 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[3];
             body.backgroundColor = "#000000";
             body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/futaba.png' alt="Futaba from Persona 5">`;
+            resultsImage.innerHTML = `<img src='img/futaba.png' alt="Futaba from Persona 5">`;
             resultsDescription.innerText = `You're a geek, but you already knew that. You can appreciate Ubuntu as an open source operating system even if you don't use it yourself. Try drinking water and stretching from time to time.`
             console.log(userLabels[3]);
             break;
@@ -262,7 +262,7 @@ function displayCustomPage(personality) {
             body.background = "url('https://i.imgur.com/Lt1HywU.jpg')";
             body.backgroundSize = "cover";
             pageTitle.style.color = "white";
-            resultsImage.innerHTML = `<img src='/img/dolly.jpg' alt="Dolly Parton adjusting her cowboy hat.">`;
+            resultsImage.innerHTML = `<img src='img/dolly.jpg' alt="Dolly Parton adjusting her cowboy hat.">`;
             resultsDescription.innerHTML = `<p>Yer a lil bit country, ain'tcha? Or maybe more Farmhouse Chic.</p> <p>You're not afraid of hard work, but you know how to enjoy the fruits of your labor. Some people find you hard to understand.</p>`
             console.log(userLabels[4]);
             break;
@@ -274,7 +274,7 @@ function displayCustomPage(personality) {
             body.background = "url('/img/img.png') repeat";
             pageTitle.style.color = "white";
             pageTitle.style.textShadow = "1px 1px #000000";
-            resultsImage.innerHTML = `<img src='/img/helvetica.jpeg' alt="City photo with a vintage filter, overlayed with the caption: Pick a bad photo, apply a vintage effect and write something in Helvetica.">`;
+            resultsImage.innerHTML = `<img src='img/helvetica.jpeg' alt="City photo with a vintage filter, overlayed with the caption: Pick a bad photo, apply a vintage effect and write something in Helvetica.">`;
             resultsDescription.innerText = `You don't keep up with the trends. You're Unique and Different. Sometimes people can't tell you apart from Arial, though.`
             console.log(userLabels[5]);
             break;
@@ -285,7 +285,7 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[6];
             body.background = "url('/img/img.png') repeat";
             pageTitle.style.textShadow = "1px 1px #000000";
-            resultsImage.innerHTML = `<img src='/img/christiangirlautumn.jpg' alt="Fall-fashion-forward woman (known from Christian Girl Autumn meme) poses in front of a pumpkin patch while holding a pumpkin spice latte.">`;
+            resultsImage.innerHTML = `<img src='img/christiangirlautumn.jpg' alt="Fall-fashion-forward woman (known from Christian Girl Autumn meme) poses in front of a pumpkin patch while holding a pumpkin spice latte.">`;
             resultsDescription.innerText = `You like to keep up with the trends. It makes you seem pretty basic on the surface, but you don't care. You're having a good time! Are you an influencer or just following their lead?`
             console.log(userLabels[6]);
             break;
@@ -295,7 +295,7 @@ function displayCustomPage(personality) {
             printResult.innerText = userLabels[7];
             body.backgroundColor = "#303030";
             body.color = "white";
-            resultsImage.innerHTML = `<img src='/img/jughead.gif' alt="In case you haven't noticed, I'm weird.  I'm a weirdo. I don't fit in and I don't want to fit in.">`;
+            resultsImage.innerHTML = `<img src='img/jughead.gif' alt="In case you haven't noticed, I'm weird.  I'm a weirdo. I don't fit in and I don't want to fit in.">`;
             resultsDescription.innerText = `You're strange and a little offputting, just the way you like it. You don't render in a lot of browsers and web guides say to replace you with Unicode, but that's because they just don't Get you.`
             console.log(userLabels[7]);
             break;
