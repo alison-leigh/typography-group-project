@@ -286,7 +286,7 @@ h2 {
 /* The sidebar menu */
 .sidenav {
     height: 100%;
-    width: 20%;
+    width: 15%;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     /*z-index: 1; !* Stay on top *!*/
     /*top: 60px; !* Stay at the top *!*/
@@ -318,7 +318,7 @@ h2 {
 
 /* Style page content */
 .main {
-    margin-left: 20%;
+    margin-left: 15%;
     padding: 0px 10px;
 }
 
