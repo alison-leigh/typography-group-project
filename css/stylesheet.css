@@ -1,3 +1,8 @@
+*{
+    border: 1px solid red;
+}
+
+
 body, html{
     min-height: 100%;
 }
@@ -407,4 +412,19 @@ this is for the History pages' styling*/
 /* utility class for para spacing */
 .ml-6{
     margin-left: 6px;
+}
+
+/* header section */
+
+.headerImage{
+        background: url('../img/Typography Marquee1.png');
+    background-size: cover;
+    min-height: 448px;
+}
+
+/* bottom banner */
+.bottomBanner{
+    background: url('../img/Bottom Banner1.png');
+    background-size: cover;
+    min-height: 150px;
 }
