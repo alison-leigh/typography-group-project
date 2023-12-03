@@ -388,3 +388,8 @@ this is for the History pages' styling*/
     --bs-btn-disabled-bg: #ccc;
     --bs-btn-disabled-border-color: #ccc;
 }
+
+/* utility class for para spacing */
+.ml-6{
+    margin-left: 6px;
+}
