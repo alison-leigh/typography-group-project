@@ -63,6 +63,11 @@ h2 {
     font-size: 2em;
     padding: 4px;
 }
+.link {
+    color: #EB5E28;
+    text-decoration: underline;
+    font-family: 'PT Serif', Serif;
+}
 
 /* General Container/Div Styling*/
 .sectionStyle {
