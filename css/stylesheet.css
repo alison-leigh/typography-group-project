@@ -68,6 +68,9 @@ h2 {
     text-decoration: underline;
     font-family: 'PT Serif', Serif;
 }
+li{
+    font-size: 1.2em;
+}
 
 /* General Container/Div Styling*/
 .sectionStyle {
