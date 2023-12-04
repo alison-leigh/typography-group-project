@@ -39,8 +39,7 @@
   list-style-type: none;
 }
 #quiz li {
-  margin: 1em 0;
-  padding: 1em;
+  padding: 0.5em;
 }
 #quiz input[type=radio] {
   padding: 0.5em;
