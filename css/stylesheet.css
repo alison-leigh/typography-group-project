@@ -432,3 +432,9 @@ this is for the History pages' styling*/
     background-size: cover;
     min-height: 150px;
 }
+
+/* Blockquote on Present Page Styling */
+blockquote{
+    background-color: white;
+    border: 2px solid #eb5e28;
+}
